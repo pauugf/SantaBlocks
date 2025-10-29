@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Dax-Bold Regular';
+  src: url('../assets/Dax-Bold-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('../assets/calibri.ttf') format('truetype');
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Dax-Bold Regular';
+}
+
+.backgroundColor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.backgroundImage {
+  position: absolute;
+}
+
+.countdown {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .big {
+    color: white;
+    font-size: 550px;
+    font-weight: bolder;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.0;
+  }
+  
+  .small {
+    position: absolute;
+    color: #0c424d;
+    font-size: 84px;
+    right: 40px;
+    bottom: 20px;
+    opacity: 1.0;
+  }
+  
+  .flash {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+  }
+}
+
+.mediaEdition {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  padding: 50px;
+  font-size: 30px;
+  font-family: Akzidenz-Grotesk;
+
+  input {
+    line-height: 30px;
+    font-size: 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Akzidenz-Grotesk;
+  }
+
+  button {
+    font-size: 30px;
+    background-color: white;
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Akzidenz-Grotesk;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+}
+
+.photo {
+  position: absolute;
+  left: calc(50% - 799px);
+  top: 0;
+}
+
+.qr {
+  position: absolute;
+  left: 80%;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.stream {
+  position: absolute;
+  left: 470px;
+  top: 185px;
+  width: 654px;
+  height: 350px;
+}
+
+.webcam {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url('../assets/game_new.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .house {
+    position: absolute;
+    left: 45px;
+    top: 50px;
+  }
+}
+
+.scoreContainer {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+
+  .catch {
+    position: absolute;
+  }
+
+  .red {
+    color: red;
+  }
+}
+
+.box {
+  position: absolute;
+  width: 601px;
+  height: 486px;
+  left: calc(50% - 300px);
+  display: none;
+  background-image: url('../assets/messageBox.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #0c424d;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  letter-spacing: -1;
+  text-align: center;
+
+  >div {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: calc(50% + 60px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.smallBox {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 226px;
+  height: 55px;
+  font-size: 34px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding-top: 18px;
+  padding-left: 80px;
+}
+
+.smallBox.score {
+  background-image: url('../assets/score.png');
+}
+
+.smallBox.time {
+  background-image: url('../assets/time.png');
+}
+
+.playersCount {
+  position: absolute;
+  left: 700px;
+  top: 538px;
+  color: white;
+  text-align: center;
+
+  .top {
+    font-size: 90px;
+
+    span {
+      font-size: 60px;
+    }
+  }
+
+  .bottom {
+    font-family: 'Calibri';
+    font-size: 40px;
+    margin-top: 25px;
+  }
+}

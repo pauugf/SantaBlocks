@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Scan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <style>
+      body {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+      }
+      #canvas {
+        width: 400px;
+        height: 400px;
+        float: left;
+        border: dashed 1px #000000;
+      }
+      #photoimage {
+        width: 533;
+        height: 300;
+        float: left;
+        border: dashed 1px #cccccc;
+      }
+      #infobox {
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+      }
+      #info, #buttons {
+        text-align: center;  
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas id="canvas"></canvas>
+      <img id="photoimage" src="./placeholder.png"></img>
+    </div>
+    <div id="infobox">
+      <div id="info">Esperando Foto...</div>
+      <div id="buttons">
+        <button id="back">Previo</button>
+        <button id="forward">Siguiente</button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

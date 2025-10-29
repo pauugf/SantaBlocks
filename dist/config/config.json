@@ -1,0 +1,10 @@
+{
+  "id": "",
+  "name": "OBS Virtual Camera",
+  "width": 1920,
+  "height": 1080,
+  "mqtt": {
+    "host": "localhost",
+    "port": 1884
+  }
+}

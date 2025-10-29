@@ -1,0 +1,17 @@
+{
+  "duration": 30,
+  "margin": 100,
+  "width": 994,
+  "height": 1852,
+  "itemScore": 10,
+  "malusScore": 5,
+  "itemInterval": 80,
+  "malusItemPercentage" : 0.3,
+  "itemSpeed": 6,
+  "bodyWidth": 320,
+  "bodyHeight": 301,
+  "instructionsTime": 10,
+  "ground": 55,
+  "ceiling": -50,
+  "accelerationFactor": 2
+}

@@ -1,0 +1,10 @@
+{
+  "width": 400,
+  "top": 1120,
+  "text": {
+    "value": "Scan QR",
+    "top": 1570,
+    "fontSize": "50px",
+    "color": "white"
+  }
+}

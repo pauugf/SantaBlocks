@@ -1,0 +1,49 @@
+{
+  "name": "santagame",
+  "version": "1.8.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "scan": "parcel build src/scan/index.html --dist-dir ./public --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-broox/Santa_Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-broox/Santa_Game/issues"
+  },
+  "homepage": "https://github.com/dev-broox/Santa_Game#readme",
+  "dependencies": {
+    "@types/gsap": "^3.0.0",
+    "@types/react": "^18.0.25",
+    "@types/stats": "^0.16.30",
+    "@types/uuid": "^8.3.4",
+    "dat.gui": "^0.7.9",
+    "firebase": "^9.6.11",
+    "osc": "^2.4.5",
+    "parcel": "^2.8.0",
+    "pixi.js": "^7.0.4",
+    "qrcode": "^1.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rpc-websockets": "^9.0.4",
+    "stats.js": "^0.17.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "buffer": "^5.7.1",
+    "events": "^3.3.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "punycode": "^1.4.1",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  }
+}

@@ -1,0 +1,8 @@
+.parcel-cache/
+node_modules/
+#dist
+dist/*
+!dist/config/
+!dist/content/
+public/
+.firebase/

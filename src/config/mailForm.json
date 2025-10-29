@@ -1,0 +1,11 @@
+{
+  "firebase": {
+    "apiKey": "AIzaSyB68fxB998XZ8wLuSaHnTIu96qcMDW6xmI",
+    "authDomain": "aljub-santa-game.firebaseapp.com",
+    "databaseURL": "https://aljub-santa-game-default-rtdb.europe-west1.firebasedatabase.app",
+    "projectId": "aljub-santa-game",
+    "storageBucket": "aljub-santa-game.appspot.com",
+    "messagingSenderId": "66287367200",
+    "appId": "1:66287367200:web:d11df3f6facec8f755f845"
+  }
+}

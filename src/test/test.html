@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+  </head>
+  <body>
+    <script type="module">
+      import { BlobsController } from './model/BlobsController';
+
+      const blobsController = new BlobsController(true);
+      const width = document.body.clientWidth;
+      const height = document.body.clientHeight;
+      const canvas = document.getElementById('canvas');
+      const context = canvas.getContext('2d');
+      blobsController.setActiveArea(0, 0, width, height);
+      blobsController.setBlobsScale(0.25, 0.4);
+      const drawHand = (hand) => {
+        if(hand.x < 0 || hand.y < 0 || hand.width < 0) {
+          return;
+        }
+        context.fillStyle = 'red';
+        context.beginPath();
+        context.arc(hand.x, hand.y, hand.width, 0, 2 * Math.PI);
+        context.fill();
+      }
+      const draw = () => {
+        for (let skeleton of blobsController.getSkeletons().values()) {     
+          drawHand(skeleton.hand_left);
+          drawHand(skeleton.hand_right);
+        }
+      }
+      const update = () => {
+        window.requestAnimationFrame(() => {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          draw();
+          update();
+        });
+      };
+      update();
+    </script>
+    <canvas id="canvas" style="width: 100%; height: 100%"></canvas>
+  </body>
+</html>

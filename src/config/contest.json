@@ -1,0 +1,4 @@
+{
+  "minScore": 100,
+  "rollService": "https://us-central1-firecms-brx-test.cloudfunctions.net/roll?clientId=hIawmNCvZNmvOaO7uaWp&contestId=WoBDQZXitRbXpG8n7RwE"
+}
